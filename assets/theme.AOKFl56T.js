@@ -1,0 +1,1 @@
+function t(){return typeof localStorage<"u"&&localStorage.getItem("theme")?localStorage.getItem("theme"):"dark"}function n(){return t()==="light"?"dark":"light"}function o(e){e==="light"?document.documentElement.classList.remove("dark"):document.documentElement.classList.add("dark"),window.localStorage.setItem("theme",e)}function r(){const e=n();o(e)}export{t as g,o as s,r as t};
